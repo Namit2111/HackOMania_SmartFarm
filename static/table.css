@@ -1,0 +1,57 @@
+/* table.css */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Style the table header */
+th {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* Style the odd rows */
+tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+/* Hover effect */
+tr:hover {
+  background-color: #ddd;
+}
+
+/* Style the first column */
+td:first-child {
+  font-weight: bold;
+}
+
+/* Style the button container column */
+td:last-child {
+  text-align: center;
+}
+
+/* Style the button */
+input[type="button"] {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+input[type="button"]:hover {
+  background-color: #45a049;
+}

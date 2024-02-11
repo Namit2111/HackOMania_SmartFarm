@@ -1,0 +1,144 @@
+body {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #eae6e2;
+    color: #444e54;
+  }
+  .topnav {
+    overflow: hidden;
+    background-color: #579f24; /* Updated background color */
+    border-radius: 15px; /* Added border radius */
+}
+
+.topnav a {
+    color: white; /* Updated text color */
+    text-align: center;
+    padding: 10px 20px; /* Updated padding */
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 10px; /* Added border radius */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.topnav a:hover {
+    background-color: #60752c;
+}
+
+.topnav a.active {
+    background-color: #60752c; /* Updated active link color */
+}
+
+  main {
+    margin-top: 30px;
+  }
+  
+  hr {
+    max-width: 800px;
+    margin: 48px;
+    border: 1px solid #686d80;
+  }
+  
+  .search-form {
+    margin: 20px 25px;
+    padding: 5px 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: 2px solid #332b1d;
+    font-family: "Oxygen Mono", monospace;
+    font-size: 12px;
+  }
+  
+  button {
+    display: inline-block;
+    border: 2px solid #332b1d;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-family: "Oxygen Mono", monospace;
+    font-size: 12px;
+    background-color: #d0cd8f;
+  }
+  button:hover {
+    background-color: #b9b559;
+  }
+  
+  .measurements {
+    position: relative;
+    left: 25px;
+    top: -10px;
+  }
+  
+  .current-weather {
+    margin-top: 50px;
+  }
+  
+  .city-title {
+    max-width: 300px;
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  .temp-title {
+    /* color: #37718e; */
+    font-size: 140px;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+  }
+  
+  .todays-info {
+    margin: 15px 0;
+  }
+  
+  .side-info {
+    position: relative;
+    left: 72px;
+  }
+  
+  p,
+  ul {
+    font-family: "Oxygen Mono", monospace;
+    font-size: 15px;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  .week-forecast {
+    text-align: center;
+    font-family: "Inter", sans-serif;
+  }
+  
+  .weather {
+    margin-top: 2px;
+    margin-bottom: 6px;
+    font-size: 14px;
+  }
+  
+  h2 {
+    font-size: 48px;
+  }
+  
+  h3 {
+    font-size: 22px;
+    margin-bottom: -18px;
+  }
+  
+  span {
+    font-size: 20px;
+  }
+  
+  footer {
+    position: relative;
+    bottom: -100px;
+    text-align: center;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #0a95c9;
+  }
+  
+  a:hover {
+    color: #007bff;
+  }
+  

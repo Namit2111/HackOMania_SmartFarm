@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profile.css">
+    <title>Document</title>
+
+    <div class="topnav">
+        <a  href="#home">Home</a>
+        <a class="active" href="#DC-prediction">DC's Prediction</a>
+        <a href="#weather-predictiont">Weather Prediction</a>
+        <a href="#about">About</a>
+      </div>
+</head>
+<body>
+    <div class="card">
+        <form id="uploadForm" enctype="multipart/form-data">
+            <input type="file" name="photo" id="photoInput" accept="image/*" required>
+            <button type="submit">Upload and Predict</button>
+        </form>
+        <div id="predictionResult"></div>
+    
+        <script>
+            document.getElementById('uploadForm').addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const formData = new FormData();
+                formData.append('photo', document.getElementById('photoInput').files[0]);
+    
+                const response = await fetch('/user/predict', {
+                    method: 'POST',
+                    body: formData
+                });
+                const result = await response.json();
+                document.getElementById('predictionResult').innerText = JSON.stringify(result);
+            });
+        </script>
+</body>
+</html>

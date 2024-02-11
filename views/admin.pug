@@ -1,0 +1,149 @@
+<!-- admin.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel='stylesheet', href='/styles.css'>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <title>Admin Panel</title>
+</head>
+
+<body>
+    <div class="side-menu">
+        <div class="brand-name">
+            <h1>Brand</h1>
+        </div>
+        <ul>
+            <li><img src="dashboard.jpg" alt="">&nbsp; <span>Dashboard</span> </li>
+            <li href= "/assign" ><img src="farmers.png" alt="">&nbsp;<span >Assign Farmers</span> </li>
+            <li><img src="crops.png" alt="">&nbsp;<span>Crops</span> </li>
+            <li><img src="location.png" alt="">&nbsp;<span>locations</span> </li>
+            <li><img src="help.png" alt="">&nbsp; <span>Help</span></li>
+            <li><img src="setting.png" alt="">&nbsp;<span>Settings</span> </li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="header">
+            <div class="nav">
+                <div class="search">
+                    <input type="text" placeholder="Search..">
+                    <button type="submit"><img src="search.png" alt=""></button>
+                </div>
+                <div class="user">
+                    <a href="#" class="btn">Add New</a>
+                    <img src="notification.png" alt="">
+                    <div class="img-case">
+                        <img src="profile.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="cards">
+                <div class="card">
+                    <div class="box">
+                        <h1>#{usersLength}</h1>
+                        <h3>Farmers</h3>
+                    </div>
+                    <div class="icon-case">
+                        <img src="farmers.png" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <h1>53</h1>
+                        <h3>Crops</h3>
+                    </div>
+                    <div class="icon-case">
+                        <img src="crops.png" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <h1>5</h1>
+                        <h3>Locations</h3>
+                    </div>
+                    <div class="icon-case">
+                        <img src="location.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <div class="content-2">
+                <div class="recent-payments">
+                    <div class="title">
+                        <h2>Graphical Area</h2>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+                    <img src="chart.jpeg" alt="">
+                   
+                </div>
+                <div class="new-students">
+                    <div class="title">
+                        <h2>Crops</h2>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+                    <table>
+                        <tr>
+                            <th>Profile</th>
+                            <th>Name</th>
+                            <th>option</th>
+                        </tr>
+                        <tr>
+                            <td><img src="wheat.png" alt=""></td>
+                            <td>Wheat</td>
+                            <td><img src="info.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td><img src="maize.jpg" alt=""></td>
+                            <td>Maize</td>
+                            <td><img src="info.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td><img src="cotton.jpg" alt=""></td>
+                            <td>Cotton</td>
+                            <td><img src="info.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td><img src="coffee.png" alt=""></td>
+                            <td>Coffee</td>
+                            <td><img src="info.png" alt=""></td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
