@@ -114,9 +114,7 @@ app.get('/user/predict', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'predict.html'));
 });
 app.post('/user/predict', async (req, res) => {
-    setTimeout(() => {
-       return  res.status(200).json({ msg: "Predicted Apple rust" });
-    }, 3000);
+    s
     // return res.status(200).json({msg:"Predicted Apple rust"}) 
     // try {
     //     if (!req.files || !req.files.photo) {
@@ -128,11 +126,11 @@ app.post('/user/predict', async (req, res) => {
 
     //     // Fetch Hugging Face API using Axios
     //     const response = await axios.post(
-    //         "https://api-inference.huggingface.co/models/linkanjarad/mobilenet_v2_1.0_224-plant-disease-identification",
+    //         "",
     //         buffer,
     //         {timeout: 10000,
     //             headers: { 
-    //                 Authorization: "Bearer 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",
+    //                 Authorization: "",
     //                 'Content-Type': 'image/jpeg' // Set appropriate content type for the image
     //             }
     //         }
